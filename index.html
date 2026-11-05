@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop refurbished laptops, iPhones and computer accessories at Britech Computers, Nairobi, Kenya.">
+  <title>BRITECH COMPUTERS | Laptops, iPhones & Accessories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">B</span><span>BRITECH <small>COMPUTERS</small></span></a>
+    <nav><a href="#catalogue">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <a class="header-order" href="https://wa.me/254726609809" target="_blank" rel="noopener">WhatsApp us</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">QUALITY TECH • GREAT VALUE</p>
+        <h1>Find the right tech<br><span>for your everyday.</span></h1>
+        <p>Shop carefully selected laptops, iPhones and accessories at competitive prices.</p>
+        <a class="primary-btn" href="#catalogue">Explore products <span>→</span></a>
+        <div class="hero-points"><span>✓ Quality devices</span><span>✓ Friendly support</span><span>✓ Easy WhatsApp ordering</span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=85" alt="Laptop computer on a desk">
+        <div class="hero-tag"><strong>BRITECH</strong><span>Your tech partner</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>Wide selection</strong><span>Laptops, phones & accessories</span></div>
+      <div><strong>Kenyan pricing</strong><span>KSh and USD displayed</span></div>
+      <div><strong>Simple ordering</strong><span>Order directly on WhatsApp</span></div>
+    </section>
+
+    <section class="catalogue-section" id="catalogue">
+      <div class="section-heading">
+        <div><p class="eyebrow">OUR STOCK</p><h2>Shop the catalogue</h2><p class="muted">Prices are shown in Kenyan shillings and approximate US dollars.</p></div>
+        <span class="stock-count" id="stockCount"></span>
+      </div>
+      <div class="toolbar">
+        <input id="searchInput" type="search" placeholder="Search model, processor or storage..." aria-label="Search products">
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All categories</option><option value="iPhone">iPhones</option><option value="Laptop">Laptops</option><option value="Accessory">Accessories</option>
+        </select>
+        <select id="brandFilter" aria-label="Filter by brand">
+          <option value="all">All brands</option><option>Apple</option><option>HP</option><option>Dell</option><option>Lenovo</option><option>NEC</option>
+        </select>
+        <select id="sortFilter" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
+      </div>
+      <div class="chips" id="quickFilters">
+        <button class="chip active" data-category="all">All</button><button class="chip" data-category="iPhone">iPhones</button><button class="chip" data-category="Laptop">Laptops</button><button class="chip" data-category="Accessory">Accessories</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No products match your search. Try another model or category.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div><p class="eyebrow">WHY BRITECH?</p><h2>Technology that works for you.</h2></div>
+      <p>Whether you need a laptop for school, business or creative work, or an iPhone for everyday use, our team is ready to help you choose. Contact us to confirm current availability, condition and warranty before payment.</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">VISIT OR CONTACT US</p><h2>Let's get you connected.</h2>
+        <p><strong>Location:</strong> Nairobi Biashara Street, Revlon Professional Plaza, 3rd Floor, Shop No. 1</p>
+        <p><strong>Business Till:</strong> 628585</p>
+        <p><strong>WhatsApp:</strong> 0726 609 809</p>
+      </div>
+      <a class="primary-btn" href="https://wa.me/254726609809?text=Hello%20Britech%20Computers%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Chat with Britech →</a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">B</span><span>BRITECH <small>COMPUTERS</small></span></a><span>© <span id="year"></span> Britech Computers. All rights reserved.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
